@@ -3,6 +3,7 @@
 @import url("typogrify.css");
 @import url(http://fonts.googleapis.com/css?family=Cardo:400italic,400,700);
 
+
 /* Body */
 body {
     background: #FDF6E3;
@@ -47,23 +48,34 @@ h1, h2, h3, h4, h5, h6 {
 hr { border: 1px dotted #8A887B; }
 
 /* Anchors */
-a {outline: 0;}
+a {
+    outline: 0;
+    text-decoration: underline;
+    font-style: italic;
+}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
     color: inherit;
     padding: 0 1px;
-    text-decoration: underline;
 }
 a:hover, a:active {
-    text-decoration: underline;
+    /*border-bottom: 1px solid black;*/
 }
 
 h1 a:hover {
     background-color: inherit
 }
 
+.entry-content a {
+/* Hack to get google fonts cardo underline bug on OSX firefox working 
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+ */
+    font-style: italic;
+}
+
 /* Paragraphs */
-p {margin-bottom: 2.60em;}
+p {margin-bottom: 1.5em;}
 
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
@@ -82,7 +94,6 @@ ol {
 .post-info {
     font-variant: small-caps;
     font-style: italic;
-    #color: red;
     font-size: 16px;
 }
 
@@ -92,9 +103,20 @@ ol {
 
 .readmore { float: right }
 
-dl {margin: 0 0 1.5em 0;}
-dt {font-weight: bold;}
-dd {margin-left: 1.5em;}
+dl {text-align:center}
+dt {font-weight: bold; font-size: 0.8em; font-variant: small-caps;}
+dd {margin-bottom: 1.0em;}
+dd:after{
+    content: "❀";
+    color: brown;
+    display:block;
+    font-size: 1.1em;
+}
+dd:last-child:after
+{
+  content: '';
+}
+
 
 pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
 
@@ -142,6 +164,7 @@ aside, nav, article, figure {
 .body {clear: both; margin: 0 auto; width: 100%; min-width:320px;}
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+article img {clear: both; margin: 0 auto; }
 
 /********* Banner and Nav *********/
 
@@ -158,6 +181,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
     text-align:center;
     font-weight: normal;
     text-decoration: none;
+    font-style:normal
 }
 
 #banner nav {
@@ -238,26 +262,21 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 /*
 Extras
  *****************/
-#extras {margin: 0 auto 3em auto; overflow: hidden; width: 460px;}
+#extras {margin: 5em auto 3em auto; overflow: hidden; width: 460px;}
 
 #extras ul {list-style: none; margin: 0;}
 #extras li {border-bottom: 1px solid #fff;}
 #extras h2 {
-    color: inherit;
     font-size: 1.429em;
-    margin-bottom: .25em;
+    margin-bottom: .45em;
     padding: 0 3px;
 }
 
 #extras a:link, #extras a:visited {
-    color: #444;
     display: block;
-    border-bottom: 1px solid #F4E3E3;
-    text-decoration: none;
     padding: .3em .25em;
 }
 
-#extras a:hover, #extras a:active {color: #fff;}
 
 /* Blogroll */
 #extras .blogroll {
@@ -299,8 +318,8 @@ About
     margin-bottom: 2em;
     overflow: hidden;
     padding: 20px;
-    text-align: right;
-    width: 760px;
+    text-align: center;
+    width: 460px;
 }
 
 #about .primary {float: left; width: 165px;}
@@ -327,31 +346,35 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
 .entry-title {
+    display:inline-block;
     margin-bottom: 25px;
-    margin-top: 0;
     text-align:center;
     font-size: 22px;
     font-style:italic;
     font-variant: small-caps;
+    width: 82%;
 }
 
 .entry-title a:link, .entry-title a:visited {text-decoration: none;}
 .entry-title a:visited {background-color: #fff;}
-.entry-title:before, .entry-title:after {
+article header:before, article header:after {
     content: "❀";
-    font-size: 0.8em;
+    font-size: 1.0em;
     font-style:italic;
     font-weight:normal;
     color: brown;
-    margin: 0 1em;
-    line-height: 1em;
+    margin: 0 0.5em;
+}
+
+article header{
+    margin-bottom: 1em;
 }
 
 /* TODO: fix fleuron display on multiline titles:
 http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
 display: block;
-.entry-title:before{float:left;}
-.entry-title:after{float:right;}
+article header:before{float:left;}
+article header:after{float:right;}
 */
 
 .hentry .post-info * {font-style: normal;}
