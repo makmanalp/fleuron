@@ -14,11 +14,19 @@ modification, are permitted provided that the following conditions are met:
 * The names of the contributors may not be used to endorse or promote products
   derived from this software without specific prior written permission.
   
-* Modifications that don't substantially change the visual appearance to
-  viewers of the site using the theme (for example, adapting the theme to
-  different blogging software or minor modifications) are allowed only if the
+* Modifications that don't substantially change the visual style (e.g. similar
+  font size, font face, spacing, color etc. In other words, the general "look
+  and feel") to viewers of the site using the theme are allowed only if the
   original attribution text and link remain clearly visible to viewers of the
   site.
+  
+  Some examples of this would be adapting the theme to different blogging
+  software or minor visual modifications.
+  
+  Changes merely in layout or arrangement such adding or removing sections or
+  columns, for the purposes of this license, do not constitute a substantial
+  change of the visual style and therefore still require the attribution text
+  and link to be clearly visible as discussed above.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
