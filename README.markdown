@@ -18,4 +18,5 @@ it freely, I only ask that you keep the attribution text and link on the bottom
 as is.
 
 
-![screenshot of fleuron theme](https://github.com/makmanalp/fleuron/raw/master/screenshot.png)
+![screenshot of fleuron theme article page](https://github.com/makmanalp/fleuron/raw/master/screenshot.png)
+![screenshot of fleuron theme index page](https://github.com/makmanalp/fleuron/raw/master/screenshot2.png)
