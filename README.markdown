@@ -1,16 +1,21 @@
-# pelican-fleuron-theme #
+# Fleuron
 
-This theme is minimalist, elegant, and typography-based. It relies heavily on
-David Perry's excellent [Cardo](http://scholarsfonts.net/cardofnt.html) font.
+Fleuron is a [Pelican](https://github.com/getpelican/pelican) theme that tries
+to be minimalist, elegant, and typography-based. It emulates the old
+book-style. It relies heavily on David Perry's excellent
+[Cardo](http://scholarsfonts.net/cardofnt.html) font. This font has a wide
+range of unicode characters included, so the theme can easily be used for
+non-english content.
 
-It was derived from the
+Fleuron was derived from the
 [cebong](https://github.com/getpelican/pelican-themes/tree/master/cebong)
 theme, which was in turn derived from
 [notmyidea](https://github.com/getpelican/pelican-themes/tree/master/notmyidea-cms).
 So much has changed at this point that it resembles neither.
 
-It's still in development, and pretty much only posts work.
+Fleuron is still in development, and pretty much only posts work. You can reuse
+it freely, I only ask that you keep the attribution text and link on the bottom
+as is.
 
-You can reuse it freely, I only ask that you keep the attribution text and link on the bottom as is.
 
 ![screenshot of fleuron theme](https://github.com/makmanalp/fleuron/raw/master/screenshot.png)
