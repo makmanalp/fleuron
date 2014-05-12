@@ -280,6 +280,15 @@ article .figure {
     color: brown;
 }
 
+.entry-content > p,
+.section > p,
+{
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+text-align: justify;
+}
+
 /*
 Extras
  *****************/
