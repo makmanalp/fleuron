@@ -260,10 +260,10 @@ article .figure {
 #content p:nth-child(2):first-letter{
     color:brown;
     float: left;
-    margin: 13px 5px 0 0;
+    margin: 5px 5px 0 0;
     font-variant: small-caps;
     display: block;
-    font-size: 52px;
+    font-size: 58px;
 }
 
 /* Paragraph-end fleuron */
