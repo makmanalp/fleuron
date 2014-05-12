@@ -257,7 +257,9 @@ article .figure {
 }
 
 /* Drop cap */
-#content p:nth-child(2):first-letter{
+.entry-content > p:nth-of-type(1):first-letter,
+.section > p:nth-of-type(1):first-letter
+{
     color:brown;
     float: left;
     margin: 5px 5px 0 0;
@@ -267,7 +269,9 @@ article .figure {
 }
 
 /* Paragraph-end fleuron */
-#content p:hover:after{
+.entry-content > p:hover:after,
+.section > p:hover:after
+{
     content: "❧";
     display: inline-block;
     padding-left: 3px;
