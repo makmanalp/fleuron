@@ -14,8 +14,8 @@ theme, which was in turn derived from
 So much has changed at this point that it resembles neither.
 
 Fleuron is still in development, and pretty much only posts work. You can reuse
-it freely, I only ask that you keep the attribution text and link on the bottom
-as is.
+it freely on your site, but there are added requirements for modifications, read
+the LICENSE for more details.
 
 
 ![screenshot of fleuron theme article page](https://github.com/makmanalp/fleuron/raw/master/screenshot.png)
