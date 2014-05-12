@@ -164,7 +164,24 @@ aside, nav, article, figure {
 .body {clear: both; margin: 0 auto; width: 100%; min-width:320px;}
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
-article img {clear: both; margin: 0 auto; }
+article img,canvas {
+    width: 80%;
+    clear: both; margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-width: 7px;
+    border-image: url(../images/border.png) 34 31 35 repeat;
+}
+article .caption {
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+article .figure {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
 
 /********* Banner and Nav *********/
 
