@@ -165,7 +165,7 @@ aside, nav, article, figure {
 .body {clear: both; margin: 0 auto; width: 100%; min-width:320px;}
 img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: left; margin: 0 2em 2em 0;}
-article img,canvas {
+article img,canvas,iframe {
     width: 80%;
     clear: both; margin: 0 auto;
     display: block;
