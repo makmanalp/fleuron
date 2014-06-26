@@ -278,8 +278,10 @@ article .figure {
     display: inline-block;
     padding-left: 3px;
     font-size: 1.2em;
-    line-height: 1em; /* Makes the lines not wiggle on hover */
     color: brown;
+    line-height: 1em; /* Makes the lines not wiggle on hover */
+    position: absolute;
+    margin-top: 3.7px;
 }
 
 .entry-content > p,
