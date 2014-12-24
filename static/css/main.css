@@ -13,7 +13,6 @@ body {
     line-height: 26px;
     text-align: left;
     padding-top:60px;
-    font-feature-settings: "liga", "onum", "kern";
 }
 
 .highlight{
